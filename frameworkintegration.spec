@@ -4,7 +4,7 @@
 %define debug_package %{nil}
 
 Name: frameworkintegration
-Version: 5.1.0
+Version: 5.3.0
 Release: 1
 Source0: http://ftp5.gwdg.de/pub/linux/kde/stable/frameworks/%{version}/%{name}-%{version}.tar.xz
 Summary: Workspace and cross-framework integration plugins
@@ -64,6 +64,7 @@ DESTDIR="%{buildroot}" ninja -C build install %{?_smp_mflags}
 
 %files -f %{name}%{major}.lang
 %{_datadir}/kf5/infopage
+%{_datadir}/knotifications5/plasma_workspace.notifyrc
 %{_libdir}/plugins/kf5/FrameworkIntegrationPlugin.so
 %{_libdir}/plugins/platformthemes/KDEPlatformTheme.so
 
