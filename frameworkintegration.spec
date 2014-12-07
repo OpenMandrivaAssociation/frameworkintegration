@@ -6,7 +6,7 @@
 
 Name: frameworkintegration
 Version: 5.4.0
-Release: 1
+Release: 2
 Source0: http://ftp5.gwdg.de/pub/linux/kde/%{stable}/frameworks/%{version}/%{name}-%{version}.tar.xz
 Summary: Workspace and cross-framework integration plugins
 URL: http://kde.org/
