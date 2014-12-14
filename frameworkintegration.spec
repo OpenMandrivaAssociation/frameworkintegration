@@ -5,8 +5,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: frameworkintegration
-Version: 5.4.0
-Release: 2
+Version: 5.5.0
+Release: 1
 Source0: http://ftp5.gwdg.de/pub/linux/kde/%{stable}/frameworks/%{version}/%{name}-%{version}.tar.xz
 Summary: Workspace and cross-framework integration plugins
 URL: http://kde.org/
@@ -67,8 +67,8 @@ DESTDIR="%{buildroot}" ninja -C build install
 %files -f %{name}%{major}.lang
 %{_datadir}/kf5/infopage
 %{_datadir}/knotifications5/plasma_workspace.notifyrc
-%{_libdir}/plugins/kf5/FrameworkIntegrationPlugin.so
-%{_libdir}/plugins/platformthemes/KDEPlatformTheme.so
+%{_libdir}/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
+%{_libdir}/qt5/plugins/platformthemes/KDEPlatformTheme.so
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}
