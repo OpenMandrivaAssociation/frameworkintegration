@@ -5,7 +5,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: frameworkintegration
-Version: 5.7.0
+Version: 5.8.0
 Release: 1
 Source0: http://ftp5.gwdg.de/pub/linux/kde/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: Workspace and cross-framework integration plugins
@@ -34,7 +34,7 @@ BuildRequires: ninja
 Requires: %{libname} = %{EVRD}
 
 %description
-Workspace and cross-framework integration plugins
+Workspace and cross-framework integration plugins.
 
 %package -n %{libname}
 Summary: Workspace and cross-framework integration plugins
@@ -42,7 +42,7 @@ Group: System/Libraries
 Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
-Workspace and cross-framework integration plugins
+Workspace and cross-framework integration plugins.
 
 %package -n %{devname}
 Summary: Development files for the KDE Frameworks 5 Style library
@@ -50,7 +50,7 @@ Group: Development/KDE and Qt
 Requires: %{libname} = %{EVRD}
 
 %description -n %{devname}
-Development files for the KDE Frameworks 5 Style library
+Development files for the KDE Frameworks 5 Style library.
 
 %prep
 %setup -q
