@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   frameworkintegration-5.13.0.tar.xz: 2f55823125052d4fcad139f536614fb48edd8d53
+sources:
+  frameworkintegration-5.14.0.tar.xz: 12e3d9f3236cd14745c4ca38da79676d8082f3f6
