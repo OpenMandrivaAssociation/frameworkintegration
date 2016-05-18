@@ -65,9 +65,7 @@ Development files for the KDE Frameworks 5 Style library.
 %install
 %ninja_install -C build
 
-%find_lang %{name}%{major}
-
-%files -f %{name}%{major}.lang
+%files
 %{_datadir}/kf5/infopage
 %{_datadir}/kconf_update/frameworksintegration-*-font.*
 %{_datadir}/knotifications5/plasma_workspace.notifyrc
