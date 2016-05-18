@@ -67,10 +67,8 @@ Development files for the KDE Frameworks 5 Style library.
 
 %files
 %{_datadir}/kf5/infopage
-%{_datadir}/kconf_update/frameworksintegration-*-font.*
 %{_datadir}/knotifications5/plasma_workspace.notifyrc
 %{_libdir}/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
-%{_libdir}/qt5/plugins/platformthemes/KDEPlatformTheme.so
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}
