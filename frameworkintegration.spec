@@ -34,7 +34,7 @@ BuildRequires: cmake(KF5Notifications)
 BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(OxygenFont)
 BuildRequires: cmake(packagekitqt5)
-BuildRequires: cmake(AppStreamQt)
+BuildRequires: cmake(AppstreamQt)
 Requires: oxygen-fonts
 Requires: %{libname} = %{EVRD}
 
