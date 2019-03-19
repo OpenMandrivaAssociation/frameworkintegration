@@ -6,7 +6,7 @@
 
 Name: frameworkintegration
 Version:	5.56.0
-Release:	2
+Release:	3
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: Workspace and cross-framework integration plugins
 URL: http://kde.org/
@@ -37,7 +37,6 @@ BuildRequires: cmake(OxygenFont)
 BuildRequires: cmake(KF5NewStuff)
 BuildRequires: cmake(packagekitqt5)
 BuildRequires: cmake(AppStreamQt) >= 0.10.4
-Requires: oxygen-fonts
 Requires: %{libname} = %{EVRD}
 
 %description
