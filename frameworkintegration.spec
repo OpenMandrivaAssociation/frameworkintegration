@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: frameworkintegration
-Version:	5.109.0
+Version:	5.110.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: Workspace and cross-framework integration plugins
@@ -71,6 +71,7 @@ Development files for the KDE Frameworks 5 Style library.
 %{_datadir}/kf5/infopage
 %{_datadir}/knotifications5/plasma_workspace.notifyrc
 %{_libdir}/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
+%{_libdir}/libexec/kf5/kpackagehandlers/appstreamhandler
 
 %files -n %{libname}
 %{_libdir}/*.so.*
