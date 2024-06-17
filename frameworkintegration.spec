@@ -71,7 +71,7 @@ Development files for the KDE Frameworks 5 Style library.
 %{_datadir}/kf5/infopage
 %{_datadir}/knotifications5/plasma_workspace.notifyrc
 %{_libdir}/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
-%{_libdir}/libexec/kf5/kpackagehandlers/appstreamhandler
+#{_libdir}/libexec/kf5/kpackagehandlers/appstreamhandler
 
 %files -n %{libname}
 %{_libdir}/*.so.*
