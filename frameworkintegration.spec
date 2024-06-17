@@ -34,7 +34,7 @@ BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(KF5Package)
 BuildRequires: cmake(KF5NewStuff)
 BuildRequires: cmake(packagekitqt5)
-BuildRequires: (cmake(AppStreamQt) >= 0.10.4 with cmake(AppStreamQt) < 0.90.0)
+BuildRequires: cmake(AppStreamQt5)
 Requires: %{libname} = %{EVRD}
 
 %description
