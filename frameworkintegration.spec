@@ -7,6 +7,7 @@ Name: frameworkintegration
 Version:	5.116.0
 Release:	3
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
+Patch0:  https://invent.kde.org/frameworks/frameworkintegration/-/merge_requests/34.patch
 Summary: Workspace and cross-framework integration plugins
 URL: http://kde.org/
 License: GPL
