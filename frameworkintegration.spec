@@ -5,7 +5,7 @@
 
 Name: frameworkintegration
 Version:	5.116.0
-Release:	3
+Release:	4
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Patch0:  https://invent.kde.org/frameworks/frameworkintegration/-/merge_requests/34.patch
 Summary: Workspace and cross-framework integration plugins
@@ -35,7 +35,6 @@ BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(KF5Package)
 BuildRequires: cmake(KF5NewStuff)
 BuildRequires: cmake(packagekitqt5)
-BuildRequires: cmake(AppStreamQt5)
 Requires: %{libname} = %{EVRD}
 
 %description
@@ -72,7 +71,6 @@ Development files for the KDE Frameworks 5 Style library.
 %{_datadir}/kf5/infopage
 %{_datadir}/knotifications5/plasma_workspace.notifyrc
 %{_libdir}/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
-%{_libdir}/libexec/kf5/kpackagehandlers/appstreamhandler
 
 %files -n %{libname}
 %{_libdir}/*.so.*
