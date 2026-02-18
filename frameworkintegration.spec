@@ -35,6 +35,7 @@ BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(KF5Package)
 BuildRequires: cmake(KF5NewStuff)
 BuildRequires: cmake(packagekitqt5)
+BuildRequires: extra-cmake-modules-plasma5
 Requires: %{libname} = %{EVRD}
 
 %description
